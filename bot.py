@@ -151,7 +151,6 @@ async def handle_document(update: Update, context: ContextTypes.DEFAULT_TYPE) ->
             name=full_pack_name,
             title=pack_title[:64],
             stickers=[input_stickers[0]],
-            sticker_format=StickerFormat.VIDEO,
         )
 
         # Add remaining stickers
