@@ -260,6 +260,10 @@ def _zip_too_large(doc) -> bool:
 # ---- Conversation: /newpack ----
 
 
+async def start(update: Update, context: ContextTypes.DEFAULT_TYPE) -> None:
+    await update.message.reply_html(HELP_TEXT)
+
+
 async def newpack_start(update: Update, context: ContextTypes.DEFAULT_TYPE) -> int:
     await update.message.reply_text(
         "Let's create a new sticker pack.\n\n"
